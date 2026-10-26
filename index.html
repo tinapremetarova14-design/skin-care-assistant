@@ -1,0 +1,195 @@
+<!doctype html><html lang="mk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Skin &amp; Care</title>
+<style>
+:root{--bg:#F6FFB5;--g:#8EB075;--t:#3A0603;--c:#FFFDF4;--f:12px;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
+*,*:before,*:after{box-sizing:inherit}
+body{margin:0;min-height:100%;color:var(--t);font:17px/1.55 "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:linear-gradient(90deg,var(--g) 0 var(--f),transparent var(--f) calc(100% - var(--f)),var(--g) calc(100% - var(--f))) fixed,var(--bg)}
+@media(min-width:900px){:root{--f:56px}}
+main{max-width:960px;margin:0 auto;padding:16px calc(var(--f) + 16px) 48px;overflow-x:hidden}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}
+.brand{font:700 26px Georgia,"Times New Roman",serif;display:flex;align-items:center;gap:8px}
+.lang{display:flex;gap:6px}.lang button{min-width:48px;min-height:44px;border:2px solid var(--t);border-radius:12px;background:var(--c);color:var(--t);font:700 15px inherit;cursor:pointer}
+.lang button[aria-pressed=true]{background:var(--g)}
+h1,h2{font-family:Georgia,"Times New Roman",serif;line-height:1.2;margin:0 0 12px}h1{font-size:clamp(30px,6vw,46px)}h2{font-size:26px}
+.card{background:var(--c);border:1px solid #cfe0bd;border-radius:22px;padding:24px;box-shadow:0 4px 18px rgba(58,6,3,.09);margin-bottom:18px}
+.hero{text-align:center;padding:48px 24px}.sm{font-size:14px}
+.btn{background:var(--g);color:var(--t);border:2px solid var(--t);border-radius:14px;padding:12px 22px;min-height:48px;font:700 16px inherit;cursor:pointer}
+.btn.o{background:transparent}.btn.s{min-height:44px;padding:8px 14px}.btn:disabled{opacity:.5;cursor:not-allowed}
+.row,.opts{display:flex;flex-wrap:wrap;gap:12px;margin:14px 0}.nav{justify-content:space-between}
+.row2{display:flex;gap:10px;margin:8px 0}.row2>*{flex:1}.row2 .btn{flex:none}
+:focus-visible{outline:3px solid var(--t);outline-offset:3px}
+fieldset{border:0;padding:0;margin:0 0 22px;min-width:0}legend,label.f{font-weight:700;display:block;margin-bottom:8px}label.f{margin:0 0 16px}
+.opt{display:flex;align-items:center;gap:10px;border:2px solid #b9cfa4;border-radius:14px;padding:10px 16px;min-height:48px;background:#fff;cursor:pointer;font-weight:400}
+.opt:has(input:checked){background:#e6f1d8;border-color:var(--t)}.opt input{width:20px;height:20px;accent-color:var(--t)}
+input[type=text],select,textarea{width:100%;font:inherit;font-weight:400;padding:12px;margin-top:6px;border:2px solid var(--t);border-radius:12px;background:#fff;color:var(--t)}
+.err{color:#8a1c12;font-weight:700;margin:6px 0}.note{background:#eef5e0;border-left:6px solid var(--g);padding:12px 16px;border-radius:10px;margin:12px 0}
+.prog{display:flex;gap:6px;list-style:none;padding:0;margin:0 0 18px}.prog li{flex:1;text-align:center;font-size:13px;border-top:6px solid #cfe0bd;padding-top:4px}.prog li.on{border-color:var(--t);font-weight:700}
+.pv,video{display:block;max-width:100%;max-height:420px;border-radius:16px;margin:12px auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:18px}.grid .card{margin:0}
+.ph{height:110px;border-radius:14px;background:#eef5e0;border:2px dashed var(--g);display:grid;place-items:center;font-size:13px;margin-bottom:12px}
+.tag{display:inline-block;background:var(--t);color:var(--bg);border-radius:8px;padding:2px 10px;font-size:12px;font-weight:700}.chip{display:inline-block;border:2px solid var(--g);border-radius:10px;padding:2px 10px;font-size:14px;font-weight:700;margin-bottom:8px}
+.dbn{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--t);color:#fff;padding:10px 16px;border-radius:12px;margin-bottom:16px;font-weight:700}
+dl{margin:0}dt{font-weight:700;margin-top:10px}dd{margin:0}.th{width:96px;height:96px;object-fit:cover;border-radius:14px;border:2px solid var(--g);display:block}.tl{display:flex;flex-wrap:wrap;gap:14px}.hero h1{font-style:italic;font-weight:400;font-family:"Palatino Linotype",Palatino,Georgia,serif}.hero h1:after{content:"";display:block;width:150px;height:12px;margin:14px auto 0;border-bottom:4px solid var(--g);border-radius:0 0 100% 100%}
+</style></head><body><main>
+<header><div class="brand"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path d="M5 25C5 11 13 5 26 4 25 17 19 25 5 25Z" fill="#8EB075" stroke="#3A0603" stroke-width="2"/><path d="M5 25 18 12" stroke="#3A0603" stroke-width="2"/></svg>Skin &amp; Care</div>
+<div class="lang" role="group" aria-label="Language"><button data-l="mk">МК</button><button data-l="en">EN</button></div></header>
+<div id="app"></div><input id="f" type="file" accept="image/jpeg,image/png,image/webp" hidden></main>
+<script>
+const D={mk:{
+h:'Нега што започнува со тебе.',d:'Додај до три фотографија и кажи ни што користиш, за да истражиш опции за нега и шминка.',go:'Започни',disc:'Козметички насоки, не медицинска дијагноза.',back:'Назад',next:'Продолжи',
+s0:'Добредојде',s1:'Фотографија',s2:'Прашања',s3:'Преглед',s4:'Резултати',pick:'Избери фотографија',take:'Фотографирај се',
+ins:'Користи јасни фотографии од напред, без шминка и филтри, со рамномерна природна светлина. Можеш да додадеш до 3 фотографии, на пример: цело лице, лева страна и десна страна.',rep:'Замени фотографија',rm:'Отстрани фотографија',cap:'Сликај',cancel:'Откажи',use:'Користи ја фотографијата',retake:'Повтори',prev:'Преглед на фотографијата',
+e_type:'Дозволени се само JPEG, PNG и WebP.',e_size:'Фотографијата е поголема од 10 MB.',e_dec:'Сликата не може да се отвори. Пробај друга.',e_need:'Додај фотографија за да продолжиш.',
+nocam:'Камерата не е достапна. Можно е вградениот прозорец да ја блокира. Користи „Избери фотографија“.',camdeny:'Пристапот до камерата е одбиен. Користи „Избери фотографија“.',
+p1:'Основна нега',p2:'Шминка и рутина',p3:'Мозолчиња и дополнително',req:'Ова поле е задолжително.',e_age:'Внеси возраст од 1 до 120 или избери „Претпочитам да не одговорам“.',
+q1:'Колку години имаш?',noage:'Претпочитам да не одговорам',q2:'Дали користиш крема за лице?',yes:'Да',no:'Не',occ:'Повремено',q2b:'Која крема за лице ја користиш?',brand:'Бренд и име на производот (по желба)',unk:'Не го знам името',
+q3:'Кои производи ги користиш за чистење на лицето?',add:'+ Додај производ',del:'Отстрани',nocl:'Не користам производи за чистење лице.',clunk:'Не ги знам имињата.',
+q4:'Дали се шминкаш?',ev:'Секојдневно',q4b:'Дали користиш пудра?',q4c:'Која пудра ја користиш?',shade:'Нијанса (број или име, ако знаеш)',q4d:'Дали оваа нијанса ти одговара?',sh_u:'Не сум сигурна/сигурен',
+q5:'Дали користиш тоник за лице?',q5b:'Кој тоник го користиш?',q5c:'Дали го користиш пред шминкање?',som:'Понекогаш',q5d:'Дали користиш други производи за лицето?',cat:'Категорија',sun:'Заштита од сонце',ser:'Серум',msk:'Маска',exf:'Пилинг',ot:'Друго',
+q6:'Колку редовно правиш рутина за нега на лицето?',dly:'Секој ден',few:'Неколку пати неделно',none:'Немам рутина',
+q7:'Дали имаш мозолчиња или митесери?',pimp:'Мозолчиња',blk:'Митесери',both:'И двете',neither:'Немам',unsure:'Не можам да проценам',sq:'Не стиснувај мозолчиња за да проверуваш.',
+q7b:'Како најчесто изгледаат или се чувствуваат мозолчињата?',red:'Црвени и воспалени',wht:'Со бел или жолтеникав врв',dis:'Некои имаат исцедок',deep:'Длабоки или болни',
+q7c:'Дали се влошуваат или оставаат лузни?',worse:'Се влошуваат',scars:'Оставаат лузни',pn:'Ниту едното',dk:'Не знам',
+q8:'Дали има нешто друго што сакаш да го знаеме?',q8h:'На пример: кога започнаа мозолчињата, дали се менуваат околу циклусот, хормонално нарушување утврдено од лекар, лекови или терапија што ги користиш, или познати алергии на состојки. Сподели само колку што ти е удобно.',
+emg:'Ако имаш тешкотии со дишењето или ненадејно отекување на усните, јазикот или грлото, побарај итна медицинска помош веднаш.',
+rev:'Преглед и согласност',ed:'Измени',prov:'Во оваа страница не е поврзан AI провајдер, па ништо не се испраќа. Кога ќе се поврзе безбеден сервер, фотографијата и одговорите би се испратиле до провајдерот што ќе биде именуван овде, за подготовка на анализа. Чувањето кај провајдерот не е проверено и не ветуваме нула чување.',
+cl:'Се согласувам моите одговори и фотографии да се користат за подготовка на насоките.',an:'Прикажи резултати',nc:'AI анализата сè уште не е поврзана.',nc2:'Ништо не е испратено. Можеш да го видиш демото со фиксни примерок-податоци.',demo:'Прикажи демо',
+dbn:'ДЕМО — фиксни примерок-податоци. Ова не е анализа на твојата фотографија.',dback:'Назад кон прегледот',pf:'Опции за купување (по желба)',ctry:'Држава/пазар',bud:'Буџет по производ и валута',pfn:'Достапност и цени не се прикажуваат без верифицирани податоци.',hmk:'Скриј препораки за шминка',
+n_ver:'Нема верифициран производ',n_safe:'Недоволно информации за персонализиран предлог',n_wh:'Задржано до консултација со дерматолог',
+c1:'Проценет тип на кожа',c1a:'Нема доволно информации за сигурна проценка на типот кожа.',c1o:'Видливи набљудувања',c1o2:'Не се достапни без вистинска AI анализа.',c1r:'Што пријави ти',c1l:'Ограничувања: фотографија и кратки прашања не се доволни за дијагноза или сигурен тип кожа.',
+c2:'Пудра',c2t:'Избери формула според посакуваната покриеност и завршница. Не можеме сигурно да предложиме точна нијанса од оваа фотографија — потребна е проверка во живо.',
+c3:'Крема за лице',c3t:'Благ хидратант без парфем е разумен почеток. Повеќе производи или чекори не значат автоматски подобро.',
+c4:'Маска за лице',c4t:'Не е потребна. Ако сакаш, прво провери ги состојките и безбедносните информации.',
+c5:'Коректор',c5t:'Не можеме сигурно да предложиме точна нијанса од оваа фотографија — потребна е проверка во живо.',
+c6:'Мицеларна вода или средство за чистење',c6t:'Благо средство што не штипе. Производите што веќе ги користиш не мора да се менуваат.',
+c7:'Тоник',c7t:'Не е неопходен. Додај го само ако сакаш.',c8:'Пилинг',c8t:'Не го препорачуваме автоматски. Киселините и ретиноидите бараат безбедносни информации што не ги знаеме.',
+c9:'Заштита од сонце',c9t:'Дневна заштита со широк спектар е општо корисна. Избери производ што го поднесуваш.',c10:'Следни чекори',
+derm:'Препорачуваме консултација со дерматолог пред да избираш нови препарати за овој проблем.',r_deep:'Причина: пријавени се длабоки или болни мозолчиња.',r_scar:'Причина: пријавено е оставање лузни.',r_worse:'Причина: пријавено е влошување.',
+nor:'Според одговорите нема посебна причина за итна консултација, но ова не е медицинска проценка.',inc:'Каталогот на верифицирани производи не е поврзан, па се прикажани само општи насоки.',u18:'Под 18: само конзервативни општи насоки; вклучи родител/старател и по потреба лекар.',
+mk:'Шминка',e_max:'Може да додадеш најмногу 3 фотографии.',del_all:'Избриши ги фотографиите и одговорите',delnote:'Ги брише податоците што ги контролира апликацијата и го ресетира процесот. Ништо не е испратено кај надворешен провајдер. Ако подоцна се поврзе провајдер, бришењето кај него зависи од неговите правила.',gm:'Општи насоки врз основа на твоите одговори',gm2:'Фотографиите не беа анализирани со AI бидејќи анализата сè уште не е поврзана.',busy:'Подготвувам општи насоки…',x2:'Пријави пудра што веќе ја користиш. Не изведуваме нијанса од друг бренд.',x3:'Пријави дека не користиш крема за лице. Хидратантот е по желба.',x3b:'Веќе користиш крема за лице; не мора да ја менуваш ако ти одговара.',x6:'Пријави дека не користиш производи за чистење. Благо средство е општо разумен основен чекор, особено ако се шминкаш.',x6b:'Веќе користиш производи за чистење; не мора да ги менуваш ако ти одговараат.',x7:'Веќе користиш тоник; не е неопходен.',x9:'Веќе внесе производ за сонце; не мора да го менуваш ако го поднесуваш.'},
+en:{
+h:'Care that starts with you.',d:'Add up to three photos and tell us about your routine to explore skincare and makeup options.',go:'Get Started',disc:'Cosmetic guidance, not a medical diagnosis.',back:'Back',next:'Continue',
+s0:'Welcome',s1:'Photo',s2:'Questions',s3:'Review',s4:'Results',pick:'Choose Photo',take:'Take Photo',
+ins:'Use clear front-facing photos without makeup or filters, in even natural lighting. You may add up to 3 photos, for example: full face, left side and right side.',rep:'Replace Photo',rm:'Remove Photo',cap:'Capture',cancel:'Cancel',use:'Use Photo',retake:'Retake',prev:'Photo preview',
+e_type:'Only JPEG, PNG and WebP are allowed.',e_size:'The photo is larger than 10 MB.',e_dec:'The image could not be opened. Try another one.',e_need:'Add a photo to continue.',
+nocam:'The camera is not available. The embedded window may be blocking it. Use “Choose Photo”.',camdeny:'Camera access was denied. Use “Choose Photo”.',
+p1:'Basic care',p2:'Makeup and routine',p3:'Pimples and additional information',req:'This field is required.',e_age:'Enter an age from 1 to 120 or choose “Prefer not to answer”.',
+q1:'How old are you?',noage:'Prefer not to answer',q2:'Do you use a face cream or moisturizer?',yes:'Yes',no:'No',occ:'Occasionally',q2b:'Which face cream do you use?',brand:'Brand and product name (optional)',unk:'I don’t know its name',
+q3:'Which products do you use to cleanse your face?',add:'+ Add product',del:'Remove',nocl:'I don’t use facial cleansing products.',clunk:'I don’t know the product names.',
+q4:'Do you wear makeup?',ev:'Every day',q4b:'Do you use foundation?',q4c:'Which foundation do you use?',shade:'Shade (number or name, if known)',q4d:'Does this shade match your skin?',sh_u:'Unsure',
+q5:'Do you use a facial toner?',q5b:'Which toner do you use?',q5c:'Do you use it before applying makeup?',som:'Sometimes',q5d:'Do you use any other facial products?',cat:'Category',sun:'Sunscreen',ser:'Serum',msk:'Mask',exf:'Exfoliator',ot:'Other',
+q6:'How regularly do you follow a skincare routine?',dly:'Every day',few:'A few times a week',none:'I don’t have a routine',
+q7:'Do you have pimples or blackheads?',pimp:'Pimples',blk:'Blackheads',both:'Both',neither:'Neither',unsure:'Unsure',sq:'Please don’t squeeze pimples to check.',
+q7b:'What do the pimples usually look or feel like?',red:'Red and inflamed',wht:'White or yellowish tips',dis:'Some have discharge',deep:'Deep or painful',
+q7c:'Are they worsening or leaving scars?',worse:'Worsening',scars:'Leaving scars',pn:'Neither',dk:'Unsure',
+q8:'Is there anything else you would like us to know?',q8h:'For example: when the pimples started, whether they change around your menstrual cycle, a hormonal condition diagnosed by a clinician, medication or skin treatment you use, or known ingredient allergies. Share only what you feel comfortable sharing.',
+emg:'If you have current difficulty breathing or sudden swelling of the lips, tongue or throat, seek urgent medical help immediately.',
+rev:'Review and consent',ed:'Edit',prov:'No AI provider is connected in this page, so nothing is sent anywhere. Once a secure backend is connected, the photo and answers would be sent to the provider named here, to prepare the analysis. Provider retention has not been verified and we do not promise zero retention.',
+cl:'I agree to my answers and photos being used to prepare the guidance.',an:'Show Results',nc:'AI analysis is not connected yet.',nc2:'Nothing was sent. You can view the demo, which uses fixed sample data.',demo:'View Demo',
+dbn:'DEMO — fixed sample data. This is not an analysis of your uploaded photo.',dback:'Back to review',pf:'Shopping preferences (optional)',ctry:'Country/market',bud:'Budget per product and currency',pfn:'Availability and prices are not shown without verified data.',hmk:'Hide makeup suggestions',
+n_ver:'No verified product available',n_safe:'Insufficient information for a personalized suggestion',n_wh:'Withheld until you consult a dermatologist',
+c1:'Estimated Skin Type',c1a:'There is not enough information to reliably estimate skin type.',c1o:'Visible observations',c1o2:'Not available without a real AI analysis.',c1r:'What you reported',c1l:'Limitations: a photo and short questions are not enough for a diagnosis or a reliable skin type.',
+c2:'Foundation',c2t:'Choose a formula by the coverage and finish you want. We cannot reliably suggest an exact shade from this photo — check the match in person.',
+c3:'Face Cream',c3t:'A gentle fragrance-free moisturizer is a reasonable start. More products or steps are not automatically better.',
+c4:'Face Mask',c4t:'Not needed. If you want one, check ingredients and safety information first.',
+c5:'Concealer',c5t:'We cannot reliably suggest an exact shade from this photo — check the match in person.',
+c6:'Micellar Water or Cleanser',c6t:'A gentle cleanser that doesn’t sting. Products you already use don’t have to change.',
+c7:'Toner',c7t:'Not necessary. Add one only if you like.',c8:'Exfoliator',c8t:'Not recommended automatically. Acids and retinoids need safety information we don’t have.',
+c9:'Sun Protection',c9t:'Daily broad-spectrum protection is generally helpful. Choose one you tolerate.',c10:'Next Steps',
+derm:'We recommend consulting a dermatologist before choosing new products for this concern.',r_deep:'Reason: deep or painful pimples were reported.',r_scar:'Reason: scarring was reported.',r_worse:'Reason: worsening was reported.',
+nor:'Your answers show no specific reason for an urgent consultation, but this is not a medical assessment.',inc:'The verified product catalog is not connected, so only general guidance is shown.',u18:'Under 18: conservative general guidance only; involve a parent/guardian and a clinician if needed.',
+mk:'Makeup',e_max:'You can add up to 3 photos.',del_all:'Delete Photos and Answers',delnote:'This clears the data the app controls and resets the flow. Nothing was sent to an external provider. If a provider is connected later, deletion there depends on its own rules.',gm:'General guidance based on your answers',gm2:'The photos were not analyzed by AI because analysis is not connected yet.',busy:'Preparing general guidance…',x2:'You reported a foundation you already use. We do not derive shades across brands.',x3:'You reported not using a face cream. A moisturizer is optional.',x3b:'You already use a face cream; no need to change it if it works for you.',x6:'You reported not using cleansing products. A gentle cleanser is a generally reasonable basic step, especially if you wear makeup.',x6b:'You already use cleansing products; no need to change them if they work for you.',x7:'You already use a toner; it is not necessary.',x9:'You already entered a sunscreen; no need to change it if you tolerate it.'}};
+const S={lang:'mk',step:0,sub:0,photos:[],rep:null,tmp:null,cam:false,pe:'',e:{},consent:false,nb:false,hide:false,pref:{ctry:'',bud:''},a:{cl:[''],o:[{c:'sun',n:''}],pt:[]}},A=S.a;
+try{const l=localStorage.getItem('sc_lang');if(l==='mk'||l==='en')S.lang=l}catch(x){}
+const $=s=>document.querySelector(s),app=$('#app'),L=k=>D[S.lang][k]||k;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const er=k=>S.e[k]?`<p class="err" role="alert">⚠ ${L(S.e[k])}</p>`:'';
+const rd=(k,q,o)=>`<fieldset><legend>${L(q)}</legend><div class="opts">${o.map(v=>`<label class="opt"><input type="radio" name="${k}" value="${v}"${A[k]===v?' checked':''}><span>${L(v)}</span></label>`).join('')}</div>${er(k)}</fieldset>`;
+const mc=(k,q,o)=>`<fieldset><legend>${L(q)}</legend><div class="opts">${o.map(v=>`<label class="opt"><input type="checkbox" data-m="${k}" value="${v}"${A[k].includes(v)?' checked':''}><span>${L(v)}</span></label>`).join('')}</div></fieldset>`;
+const tx=(k,q)=>`<label class="f">${L(q)}<input type="text" data-k="${k}" value="${esc(A[k]||'')}" autocomplete="off"></label>`;
+const fl=(k,q)=>`<div class="opts"><label class="opt"><input type="checkbox" data-f="${k}"${A[k]?' checked':''}><span>${L(q)}</span></label></div>`;
+const nav=n=>`<div class="row nav"><button class="btn o" data-act="back">${L('back')}</button>${n===0?'':`<button class="btn" data-act="next">${L('next')}</button>`}</div>`;
+const mkOn=()=>A.mk&&A.mk!=='no';
+function prog(){return`<ol class="prog">${[0,1,2,3,4].map(i=>`<li class="${i===S.step?'on':''}"${i===S.step?' aria-current="step"':''}>${L('s'+i)}</li>`).join('')}</ol>`}
+function pho(){let b;
+if(S.cam==='live')b=`<video id="v" autoplay playsinline muted aria-label="${L('s1')}"></video><div class="row"><button class="btn" data-act="cap">${L('cap')}</button><button class="btn o" data-act="cc">${L('cancel')}</button></div>`;
+else if(S.cam==='shot')b=`<img class="pv" src="${S.tmp}" alt="${L('prev')}"><div class="row"><button class="btn" data-act="use">${L('use')}</button><button class="btn o" data-act="cam">${L('retake')}</button></div>`;
+else if(S.photo)b=`<img class="pv" src="${S.photo}" alt="${L('prev')}"><div class="row"><button class="btn o" data-act="pick">${L('rep')}</button><button class="btn o" data-act="cam">${L('take')}</button><button class="btn o" data-act="rm">${L('rm')}</button></div>`;
+else b=`<div class="row"><button class="btn" data-act="pick">${L('pick')}</button><button class="btn" data-act="cam">${L('take')}</button></div>`;
+return`<section class="card"><h2>${L('s1')}</h2><p>${L('ins')}</p>${b}${S.pe?`<p class="err" role="alert">⚠ ${L(S.pe)}</p>`:''}</section>`+nav()}
+function pho2(){let b;const n=S.photos.length;
+if(S.cam==='live')b=`<video id="v" autoplay playsinline muted aria-label="${L('s1')}"></video><div class="row"><button class="btn" data-act="cap">${L('cap')}</button><button class="btn o" data-act="cc">${L('cancel')}</button></div>`;
+else if(S.cam==='shot')b=`<img class="pv" src="${S.tmp}" alt="${L('prev')}"><div class="row"><button class="btn" data-act="use">${L('use')}</button><button class="btn o" data-act="cam">${L('retake')}</button></div>`;
+else b=`<div class="tl">${S.photos.map((p,i)=>`<figure style="margin:0"><img class="th" src="${p}" alt="${L('prev')} ${i+1}"><div class="row" style="margin:6px 0"><button class="btn o s" data-act="rep" data-i="${i}">${L('rep')}</button><button class="btn o s" data-act="rm" data-i="${i}">${L('rm')}</button></div></figure>`).join('')}</div><p class="sm">${n}/3${n>=3?' — '+L('e_max'):''}</p><div class="row"><button class="btn" data-act="pick"${n>=3?' disabled':''}>${L('pick')}</button><button class="btn" data-act="cam"${n>=3?' disabled':''}>${L('take')}</button></div>`;
+return`<section class="card"><h2>${L('s1')}</h2><p>${L('ins')}</p>${b}${S.pe?`<p class="err" role="alert">⚠ ${L(S.pe)}</p>`:''}</section>`+nav()}
+function qs(){let h='';const yn=['yes','no','occ'];
+if(S.sub===0){const off=A.nocl||A.clunk;h=`<fieldset><legend>${L('q3')}</legend>${A.cl.map((v,i)=>`<div class="row2"><input type="text" aria-label="${L('brand')} ${i+1}" data-cl="${i}" value="${esc(v)}"${off?' disabled':''}>${A.cl.length>1?`<button class="btn o s" data-act="rmcl" data-i="${i}">${L('del')}</button>`:''}</div>`).join('')}<button class="btn o s" data-act="addcl"${off?' disabled':''}>${L('add')}</button>${fl('nocl','nocl')}${fl('clunk','clunk')}</fieldset>`;h+=rd('cream','q2',yn);if(A.cream==='yes'||A.cream==='occ')h+=tx('creamName','q2b')+fl('creamUnk','unk')}
+if(S.sub===1){h=rd('mk','q4',['ev','occ','no']);
+if(mkOn()){h+=rd('fd','q4b',['yes','no']);if(A.fd==='yes')h+=tx('fdName','q4c')+tx('fdShade','shade')}
+h+=rd('tn','q5',yn);if(A.tn==='yes'||A.tn==='occ'){h+=tx('tnName','q5b');if(mkOn())h+=rd('tnBefore','q5c',['yes','no','som'])}
+h+=`<fieldset><legend>${L('q5d')}</legend>${A.o.map((x,i)=>`<div class="row2"><select aria-label="${L('cat')}" data-oc="${i}">${['sun','ser','msk','exf','ot'].map(c=>`<option value="${c}"${x.c===c?' selected':''}>${L(c)}</option>`).join('')}</select><input type="text" aria-label="${L('brand')}" data-on="${i}" value="${esc(x.n)}">${A.o.length>1?`<button class="btn o s" data-act="rmo" data-i="${i}">${L('del')}</button>`:''}</div>`).join('')}<button class="btn o s" data-act="addo">${L('add')}</button></fieldset>`+rd('rt','q6',['dly','few','occ','none'])}
+if(S.sub===2){h=rd('pim','q7',['pimp','blk','both','neither','unsure']);
+if(A.pim==='pimp'||A.pim==='both')h+=mc('pt','q7b',['red','wht','dis','deep','unsure'])+rd('pw','q7c',['worse','scars','both','pn','dk']);
+h+=`<fieldset><legend><label for="ex">${L('q8')}</label></legend><p class="sm" id="exh">${L('q8h')}</p><textarea id="ex" rows="5" data-k="extra" aria-describedby="exh">${esc(A.extra||'')}</textarea></fieldset>`}
+return`<section class="card"><h2>${L('p'+(S.sub+1))} <span class="sm">(${S.sub+1}/3)</span></h2>${h}</section>`+nav()}
+function review(){const o=v=>v?L(v):'—',j=a=>a.filter(Boolean).map(esc).join(', ')||'—',m=mkOn();
+const ot=A.o.filter(x=>x.n).map(x=>L(x.c)+': '+esc(x.n)).join(', ');
+const r=[['q3',A.nocl?L('nocl'):A.clunk?L('clunk'):j(A.cl)],['q2',o(A.cream)+((A.cream==='yes'||A.cream==='occ')&&A.creamName?' ('+esc(A.creamName)+')':'')],
+['q4',o(A.mk)+(m&&A.fd?'; '+L('q4b')+' '+o(A.fd):'')+(m&&A.fd==='yes'&&A.fdName?' — '+esc(A.fdName):'')+(m&&A.fd==='yes'&&A.fdShade?', '+esc(A.fdShade):'')],
+['q5',o(A.tn)+((A.tn==='yes'||A.tn==='occ')&&A.tnName?' ('+esc(A.tnName)+')':'')+(ot?'; '+ot:'')],['q6',o(A.rt)],['q7',o(A.pim)+(A.pt.length?': '+A.pt.map(v=>L(v)).join(', '):'')+(A.pw?'; '+o(A.pw):'')],['q8',A.extra?esc(A.extra):'—']];
+return`<section class="card"><h2>${L('rev')}</h2><div class="row" style="justify-content:center">${S.photos.map((p,i)=>`<img class="th" src="${p}" alt="${L('prev')} ${i+1}">`).join('')}<button class="btn o s" data-act="ed" data-s="1">${L('ed')}</button></div>
+<dl>${r.map(([q,v],i)=>`<dt>${L(q)}</dt><dd>${v}</dd>`).join('')}</dl><div class="row"><button class="btn o s" data-act="ed" data-s="2" data-u="0">${L('ed')} 1</button><button class="btn o s" data-act="ed" data-s="2" data-u="1">${L('ed')} 2</button><button class="btn o s" data-act="ed" data-s="2" data-u="2">${L('ed')} 3</button></div>
+<label class="opt"><input type="checkbox" data-cs="1"${S.consent?' checked':''}><span>${L('cl')}</span></label>
+<div class="row"><button class="btn" data-act="an"${S.consent?'':' disabled'}>${L('an')}</button></div>
+${S.busy?`<div class="note" role="status">${L('busy')}</div>`:''}<div class="row"><button class="btn o s" data-act="wipe">${L('del_all')}</button></div></section>`+nav(0)}
+function results2(){const rs=[];if(A.pt.includes('deep'))rs.push('r_deep');if(A.pw==='scars'||A.pw==='both')rs.push('r_scar');if(A.pw==='worse'||A.pw==='both')rs.push('r_worse');
+const rep=[];if(A.pim)rep.push(L('q7')+' '+L(A.pim));if(A.pt.length)rep.push(A.pt.map(v=>L(v)).join(', '));if(A.pw)rep.push(L(A.pw));if(A.rt)rep.push(L('q6')+' '+L(A.rt));
+return`<article class="card"><h2>${L('c1')}</h2><p><strong>${L('c1a')}</strong></p><dl><dt>${L('c1r')}</dt><dd>${rep.map(esc).join(' · ')||'—'}</dd></dl>${rs.length?`<div class="note"><strong>${L('derm')}</strong><br>${rs.map(r=>L(r)).join(' ')}</div>`:''}<p class="sm">${L('c1l')}</p></article><div class="row"><button class="btn o" data-act="dback">${L('dback')}</button><button class="btn o" data-act="wipe">${L('del_all')}</button></div><p class="sm">${L('delnote')}</p>`}
+function results(){const rs=[];if(A.pt.includes('deep'))rs.push('r_deep');if(A.pw==='scars'||A.pw==='both')rs.push('r_scar');if(A.pw==='worse'||A.pw==='both')rs.push('r_worse');
+const rep=[];if(A.pim)rep.push(L('q7')+' '+L(A.pim));if(A.pt.length)rep.push(A.pt.map(v=>L(v)).join(', '));if(A.pw)rep.push(L(A.pw));if(A.rt)rep.push(L('q6')+' '+L(A.rt));
+const tag='',X=c=>({c2:mkOn()&&A.fd==='yes'&&A.fdName?L('x2'):'',c3:A.cream==='no'?L('x3'):A.cream?L('x3b'):'',c6:A.nocl?L('x6'):A.cl.some(v=>v)?L('x6b'):'',c7:A.tn==='yes'||A.tn==='occ'?L('x7'):'',c9:A.o.some(q=>q.c==='sun'&&q.n)?L('x9'):''}[c]||'');
+const card=(c,tr,mk)=>mk&&S.hide?'':`<article class="card"><div class="ph" aria-hidden="true">${L('n_ver')}</div><h2>${L(c)} ${tag}</h2><span class="chip">${tr&&rs.length?L('n_wh'):tr?L('n_safe'):L('n_ver')}</span><p>${L(c+'t')}</p>${X(c)?`<p>${X(c)}</p>`:''}</article>`;
+const mkc=['c2','c5'];
+return`<div class="note" role="status"><strong>${L('gm')}</strong></div><section class="card"><h2>${L('pf')}</h2><div class="row2"><label class="f">${L('ctry')}<input type="text" data-p="ctry" value="${esc(S.pref.ctry)}"></label><label class="f">${L('bud')}<input type="text" data-p="bud" value="${esc(S.pref.bud)}"></label></div><p class="sm">${L('pfn')}</p><label class="opt"><input type="checkbox" data-hm="1"${S.hide?' checked':''}><span>${L('hmk')}</span></label></section>
+<div class="grid"><article class="card"><h2>${L('c1')} ${tag}</h2><p><strong>${L('c1a')}</strong></p><dl><dt>${L('c1r')}</dt><dd>${rep.map(esc).join(' · ')||'—'}</dd></dl><p class="sm">${L('c1l')}</p></article>
+${[['c2',0,1],['c3'],['c4',1,1],['c5',0,1],['c6'],['c7',1],['c8',1],['c9']].map(([c,t,m])=>card(c,c==='c4'||c==='c7'||c==='c8',mkc.includes(c))).join('')}
+<article class="card"><h2>${L('c10')} ${tag}</h2>${rs.length?`<p><strong>${L('derm')}</strong></p><ul>${rs.map(r=>`<li>${L(r)}</li>`).join('')}</ul>`:`<p>${L('nor')}</p>`}<p class="sm">${L('inc')}</p><div class="note">${L('emg')}</div></article></div>
+<div class="row"><button class="btn o" data-act="dback">${L('dback')}</button><button class="btn o" data-act="wipe">${L('del_all')}</button></div><p class="sm">${L('delnote')}</p>`}
+let st=null;const stop=()=>{if(st){st.getTracks().forEach(t=>t.stop());st=null}};
+function render(foc){document.documentElement.lang=S.lang;document.querySelectorAll('[data-l]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===S.lang));
+const s=S.step;app.innerHTML=(s===0?`<section class="card hero"><h1>${L('h')}</h1><button class="btn" data-act="start">${L('go')}</button><p class="sm">${L('disc')}</p></section>`:prog()+(s===1?pho2():s===2?qs():s===3?review():results2()));
+if(S.cam==='live'&&st)$('#v').srcObject=st;if(foc){scrollTo(0,0);const x=$('h1,h2');if(x){x.tabIndex=-1;x.focus()}}}
+function rf(t){const q='input,select,textarea,button',i=[...app.querySelectorAll(q)].indexOf(t);render();if(i>=0){const n=app.querySelectorAll(q)[i];n&&n.focus()}}
+function val(){const e=S.e={},r=k=>{if(!A[k])e[k]='req'};
+if(S.sub===0)r('cream');
+if(S.sub===1){r('mk');if(mkOn())r('fd');r('tn');r('rt')}
+if(S.sub===2)r('pim');
+render();const f=$('.err');if(f)f.scrollIntoView({block:'center'});return!Object.keys(e).length}
+function wipe(){stop();Object.assign(S,{step:0,sub:0,photos:[],tmp:null,cam:false,pe:'',e:{},consent:false,busy:false,hide:false,rep:null,pref:{ctry:'',bud:''}});for(const k of Object.keys(A))delete A[k];Object.assign(A,{cl:[''],o:[{c:'sun',n:''}],pt:[]});render(1)}
+async function cam(){S.pe='';stop();if(!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia){S.pe='nocam';S.cam=false;return render()}
+try{st=await navigator.mediaDevices.getUserMedia({video:{facingMode:'user'},audio:false});S.cam='live'}catch(x){S.cam=false;S.pe=x&&x.name==='NotAllowedError'?'camdeny':'nocam'}render()}
+app.addEventListener('input',e=>{const t=e.target,d=t.dataset;if(d.k)A[d.k]=t.value;else if(d.cl!=null)A.cl[d.cl]=t.value;else if(d.oc!=null)A.o[d.oc].c=t.value;else if(d.on!=null)A.o[d.on].n=t.value;else if(d.p)S.pref[d.p]=t.value});
+app.addEventListener('change',e=>{const t=e.target,d=t.dataset;
+if(t.type==='radio'){A[t.name]=t.value;delete S.e[t.name];rf(t)}
+else if(d.f){A[d.f]=t.checked;if(t.checked){if(d.f==='noage')A.age='';if(d.f==='nocl'){A.cl=[''];A.clunk=false}if(d.f==='clunk'){A.cl=[''];A.nocl=false}}rf(t)}
+else if(d.m){const a=A[d.m],v=t.value;A[d.m]=t.checked?(v==='unsure'?['unsure']:a.filter(x=>x!=='unsure').concat(v)):a.filter(x=>x!==v);rf(t)}
+else if(d.hm){S.hide=t.checked;rf(t)}else if(d.cs){S.consent=t.checked;rf(t)}});
+app.addEventListener('click',e=>{const b=e.target.closest('[data-act]');if(!b)return;const a=b.dataset.act,i=+b.dataset.i;let f=1;
+if(a==='start'){S.step=1}
+else if(a==='back'){stop();S.cam=false;if(S.step===2&&S.sub>0)S.sub--;else{S.step--;if(S.step===2)S.sub=2}}
+else if(a==='next'){stop();S.cam=false;if(S.step===1){if(!S.photos.length){S.pe='e_need';return render()}S.step=2;S.sub=0}else{if(!val())return;if(S.sub<2)S.sub++;else S.step=3}}
+else if(a==='pick'){S.rep=null;$('#f').multiple=true;$('#f').click();return}else if(a==='cam'){cam();return}
+else if(a==='cap'){const v=$('#v');if(!v||!v.videoWidth)return;const c=document.createElement('canvas');c.width=v.videoWidth;c.height=v.videoHeight;c.getContext('2d').drawImage(v,0,0);S.tmp=c.toDataURL('image/jpeg',.9);stop();S.cam='shot';f=0}
+else if(a==='cc'){stop();S.cam=false;f=0}else if(a==='use'){if(S.rep!=null)S.photos[S.rep]=S.tmp;else if(S.photos.length<3)S.photos.push(S.tmp);S.rep=null;S.cam=false;S.pe='';f=0}else if(a==='rm'){S.photos.splice(i,1);S.pe='';f=0}else if(a==='rep'){S.rep=i;$('#f').multiple=false;$('#f').click();return}else if(a==='wipe'){wipe();return}
+else if(a==='addcl'){A.cl.push('');f=0}else if(a==='rmcl'){A.cl.splice(i,1);f=0}else if(a==='addo'){A.o.push({c:'ot',n:''});f=0}else if(a==='rmo'){A.o.splice(i,1);f=0}
+else if(a==='ed'){S.step=+b.dataset.s;if(b.dataset.u)S.sub=+b.dataset.u}
+else if(a==='an'){if(!S.consent||S.busy)return;S.busy=true;f=0;setTimeout(()=>{S.busy=false;S.step=4;render(1)},700)}else if(a==='dback'){S.step=3}
+render(f)});
+const rdF=fl=>new Promise(res=>{if(!['image/jpeg','image/png','image/webp'].includes(fl.type))return res('e_type');if(fl.size>10485760)return res('e_size');const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>res(r.result);im.onerror=()=>res('e_dec');im.src=r.result};r.onerror=()=>res('e_dec');r.readAsDataURL(fl)});
+$('#f').addEventListener('change',async e=>{let fs=[...e.target.files];e.target.value='';if(!fs.length)return;S.pe='';const rep=S.rep;S.rep=null;
+if(rep!=null)fs=fs.slice(0,1);else{const room=3-S.photos.length;if(fs.length>room){S.pe='e_max';fs=fs.slice(0,room)}}
+for(const fl of fs){const x=await rdF(fl);if(x.startsWith('data:')){if(rep!=null)S.photos[rep]=x;else S.photos.push(x)}else S.pe=x}
+render()});
+document.querySelectorAll('[data-l]').forEach(b=>b.addEventListener('click',()=>{S.lang=b.dataset.l;try{localStorage.setItem('sc_lang',S.lang)}catch(x){}render()}));
+addEventListener('pagehide',stop);render();
+</script></body></html>
